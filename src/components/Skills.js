@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   FaBootstrap,
   FaCss3,
@@ -16,11 +16,12 @@ import TypeWriter from "typewriter-effect";
 
 export default function Skills() {
   return (
-    <div style={{ marginTop: "300px" }}>
+    <div className="container p-5 mt-5 "
+    style={{ marginTop: "20px" }}>
       <div className="mt-5">
         <div className=" row container mt-5  text-center  justify-content-center mx-auto ">
           <div
-            className="d-none d-md-block mb-3 "
+            className="d-none d-md-block m-5 "
             style={{ fontFamily: "Daktilo", color: "#00ff00" }}
           >
             <TypeWriter
@@ -31,7 +32,7 @@ export default function Skills() {
               }}
             />
           </div>
-          <div className="col-lg-3 m-1 col-sm-12 col-md-3 col-12 mx-5 mb-2 my-auto">
+          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5 mb-2 my-auto">
             <div
               className="dil card  rounded-4 "
               style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
@@ -46,7 +47,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 m-1 col-sm-12 col-md-3  col-12  mx-5  mb-2  ">
+          <div className="col-lg-3 m-1 col-sm-12 col-md-12  col-12  mx-5  mb-2  ">
             <div
               className="dil card  rounded-4 "
               style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
@@ -61,7 +62,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 m-1 col-sm-12 col-md-3 col-12 mx-5  mb-2 ">
+          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
             <div
               className="dil card  rounded-4"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
@@ -76,7 +77,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 m-1 col-sm-12 col-md-3 col-12 mx-5  mb-2 ">
+          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
             <div
               className="dil card  rounded-4"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
@@ -91,7 +92,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 m-1 col-sm-12 col-md-3 col-12 mx-5  mb-2 ">
+          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
             <div
               className="dil card  rounded-4"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
@@ -106,7 +107,7 @@ export default function Skills() {
               </div>
             </div>
           </div>{" "}
-          <div className="col-lg-3 m-1 col-sm-12 col-md-3 col-12 mx-5  mb-2 ">
+          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
             <div
               className="dil card  rounded-4"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
@@ -121,7 +122,7 @@ export default function Skills() {
               </div>
             </div>
           </div>{" "}
-          <div className="col-lg-3 m-1 col-sm-12 col-md-3 col-12 mx-5  mb-2 ">
+          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
             <div
               className="dil card  rounded-4"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
@@ -136,7 +137,7 @@ export default function Skills() {
               </div>
             </div>
           </div>{" "}
-          <div className="col-lg-3 m-1  col-sm-12 col-md-3 col-12 mx-5  mb-2 ">
+          <div className="col-lg-3 m-1  col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
             <div
               className=" dil card  rounded-4"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
@@ -151,7 +152,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 m-1  col-sm-12 col-md-3 col-12 mx-5  mb-2  ">
+          <div className="col-lg-3 m-1  col-sm-12 col-md-12 col-12 mx-5  mb-2  ">
             <div
               className=" dil card  rounded-4"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}

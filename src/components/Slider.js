@@ -1,6 +1,6 @@
 import React from "react";
 import AwesomeSlider from "react-awesome-slider";
-import style from "../styles.css";
+import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 
 import AboutMe from "./AboutMe";
@@ -8,19 +8,22 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
-export default function Slider() {
-  const slider = (
-    <div>
+
+export default function Slider({ topSpacing }) {
+  return (
+    <div
+    className="awssld--fill-parent"
+      style={{
+        marginTop: topSpacing,
+        height: `calc(100vh - ${topSpacing}px)`,
+      }}
+    >
       <AwesomeSlider
-        style={{ backgroundColor: "#000" }}
-        cssModule={style}
-        fillParent={true}
         bullets={false}   
-        mobileTouch={true}
-  
-        animation="cubeAnimation"
-      >
-        <div>
+        fillParent={true}
+      animation="cubeAnimation"
+       >
+     <div>
           <AboutMe />{" "}
         </div>
         <div>
@@ -32,9 +35,8 @@ export default function Slider() {
 
         <div>
           <Contact />{" "}
-        </div>
-      </AwesomeSlider>
+        </div>    
+          </AwesomeSlider>
     </div>
   );
-  return <div>{slider}</div>;
 }

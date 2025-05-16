@@ -1,5 +1,14 @@
 .App {
-  text-align: center;
+  text-align: center
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000; /* Scroll'ı tamamen kapatmak istiyorsan */
 }
 
 .App-logo {
@@ -64,4 +73,33 @@
   font-family: "Daktilo";
   opacity: 0.5;
   color: rgb(245, 235, 235);
+}
+.matrix-navbar {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 0.6rem 1rem;
+  box-shadow: 0 0 10px #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  border-bottom: 1px solid #00ff00;
+}
+
+.matrix-text {
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  .matrix-text {
+    font-size: 1rem;
+    text-align: center !important;
+    padding: 0.2rem 0;
+  }
+
+  .matrix-navbar {
+    flex-direction: column;
+  }
 }

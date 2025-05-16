@@ -45,8 +45,8 @@ export default class Contact extends Component {
   }
   render() {
     return (
-      <div style={{ marginTop: "400px" }}>
-        <div class="p-5 container">
+      <div style={{ marginTop: "20px" }}>
+        <div className="p-5 container">
           <div className=" row container mt-5  text-center  justify-content-center">
             <div
               className=" mb-3 "
@@ -62,8 +62,7 @@ export default class Contact extends Component {
             </div>
           </div>
           <form onSubmit={this.handleSubmit}>
-            <div className="mx-auto row">
-              <label className="form-label col-lg-12">Name</label>
+            <div className="mx-auto row p-3 ">
               <input
                 style={{
                   backgroundColor: "rgba(255, 255, 255, 0.4)",
@@ -77,7 +76,6 @@ export default class Contact extends Component {
                 aria-describedby="helpId"
                 onChange={this.handleChange}
               />
-              <label className="form-label col-lg-12">Email</label>
               <input
                 style={{
                   backgroundColor: "rgba(255, 255, 255, 0.4)",
@@ -91,7 +89,6 @@ export default class Contact extends Component {
                 aria-describedby="helpId"
                 onChange={this.handleChange}
               />
-              <label className="form-label col-lg-12">Message</label>
 
               <textarea
                 style={{
@@ -108,7 +105,7 @@ export default class Contact extends Component {
               <div>
                 <Button
                   type="submit"
-                  style={{ fontFamily: "Daktilo" }}
+                  style={{ fontFamily: "Daktilo", color: "#00ff00" }}
                   className="bg-transparent mt-2 fw-bold"
                 >
                   Send
@@ -118,28 +115,28 @@ export default class Contact extends Component {
           </form>
 
           <div className="">
-            <div style={{ color: "#00ff00" }} class="snowflake">
+            <div style={{ color: "#00ff00" }} className="snowflake">
               <FaJava />
             </div>
-            <div style={{ color: "#00ff00" }} class="snowflake">
+            <div style={{ color: "#00ff00" }} className="snowflake">
               <FaCss3 />
             </div>
-            <div style={{ color: "#00ff00" }} class="snowflake">
+            <div style={{ color: "#00ff00" }} className="snowflake">
               <FaGoogle />
             </div>
-            <div style={{ color: "#00ff00" }} class="snowflake">
+            <div style={{ color: "#00ff00" }} className="snowflake">
               <FaJs />
             </div>
-            <div style={{ color: "#00ff00" }} class="snowflake">
+            <div style={{ color: "#00ff00" }} className="snowflake">
               <FaPython />
             </div>
-            <div style={{ color: "#00ff00" }} class="snowflake">
+            <div style={{ color: "#00ff00" }} className="snowflake">
               <FaGithub />
             </div>
-            <div style={{ color: "#00ff00" }} class="snowflake">
+            <div style={{ color: "#00ff00" }} className="snowflake">
               <FaBootstrap />
             </div>
-            <div style={{ color: "#00ff00" }} class="snowflake">
+            <div style={{ color: "#00ff00" }} className="snowflake">
               <FaPhp />
             </div>
           </div>

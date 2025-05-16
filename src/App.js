@@ -1,14 +1,22 @@
+// src/App.js
+import React, { useEffect,useState } from "react";
 import MyNav from "./components/MyNav";
-import React from "react";
 import Slider from "./components/Slider";
 import "./App.css";
+import "./styles.css"
+
 
 function App() {
-  return (
-    <div className="App w-100">
-      <MyNav />
+  const [navHeight, setNavHeight] = useState(0);
+   useEffect(() => {
+    document.title = "Developer Portfolio";
+  }, []); 
 
-      <Slider />
+
+  return (
+    <div className="App">
+      <MyNav setNavHeight={setNavHeight} />
+      <Slider topSpacing={navHeight} />
     </div>
   );
 }
