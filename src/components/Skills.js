@@ -16,15 +16,15 @@ import TypeWriter from "typewriter-effect";
 
 export default function Skills() {
   return (
-    <div className="container  mt-5 mb-5"
+    <div className=" mt-5 mb-5"
     style={{ marginTop: "20px" }}>
       <div className="mt-5">
-         <div className="container p-5 mt-5" style={{ marginTop: "20px" }}>
+         <div className="container  mt-5" style={{ marginTop: "20px" }}>
       <div className="mt-5">
         <div className="row container mt-5 text-center justify-content-center mx-auto">
           {/* Typewriter effect for the title */}
           <div
-            className="d-none d-md-block m-5"
+            className="mb-5 mt-5"
             style={{ fontFamily: "Daktilo", color: "#00ff00" }}
           >
             <TypeWriter
@@ -51,7 +51,7 @@ export default function Skills() {
             ].map((skill, index) => (
               <div
                 key={index}
-                className="col-lg-3 col-md-4 col-sm-6 col-12 m-2" // Adjusted column sizes
+                className="col-lg-3 col-md-3 col-sm-12 col-12  m-2" // Adjusted column sizes
               >
                 <div
                   className="dil card rounded-4"
@@ -73,7 +73,7 @@ export default function Skills() {
       </div>
     </div>
 
-        <div className="d-none d-lg-block">
+        <div className="">
           <div style={{ color: "#00ff00" }} className="snowflake">
             <FaJava />
           </div>

@@ -5,7 +5,7 @@ import { Row, Col } from "reactstrap";
 export default function AboutMe() {
   return (
     <div>
-      <Row className=" text-white overflow-hidden">
+      <Row className="p-5 text-white overflow-hidden">
         <Col
           style={{ marginTop: "10px", fontFamily: "Daktilo", color: "#00ff00" }}
           xs={12}

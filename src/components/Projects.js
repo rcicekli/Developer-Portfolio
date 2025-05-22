@@ -17,7 +17,7 @@ export default function Projects() {
       <div className="p-5 container ">
         <div className=" row container mt-1 text-center  justify-content-center">
           <div
-            className="d-none d-md-block mb-3 "
+            className="mt-3 mb-5 "
             style={{ fontFamily: "Daktilo", color: "#00ff00" }}
           >
             <TypeWriter
@@ -129,7 +129,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="d-none d-lg-block">
+        <div className="">
           <div style={{ color: "#00ff00" }} className="snowflake">
             <FaJava />
           </div>
