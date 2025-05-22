@@ -16,12 +16,15 @@ import TypeWriter from "typewriter-effect";
 
 export default function Skills() {
   return (
-    <div className="container p-5 mt-5 "
+    <div className="container  mt-5 mb-5"
     style={{ marginTop: "20px" }}>
       <div className="mt-5">
-        <div className=" row container mt-5  text-center  justify-content-center mx-auto ">
+         <div className="container p-5 mt-5" style={{ marginTop: "20px" }}>
+      <div className="mt-5">
+        <div className="row container mt-5 text-center justify-content-center mx-auto">
+          {/* Typewriter effect for the title */}
           <div
-            className="d-none d-md-block m-5 "
+            className="d-none d-md-block m-5"
             style={{ fontFamily: "Daktilo", color: "#00ff00" }}
           >
             <TypeWriter
@@ -32,142 +35,43 @@ export default function Skills() {
               }}
             />
           </div>
-          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5 mb-2 my-auto">
-            <div
-              className="dil card  rounded-4 "
-              style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
-            >
-              <div className="card-body">
-                <h3 className="card-title " style={{ color: "#ff7b00" }}>
-                  <FaHtml5 />
-                </h3>
-                <p className="card-text text-black fw-bold d-none d-lg-block">
-                  HTML
-                </p>
+
+          {/* Skill Cards Section */}
+          <div className="row justify-content-center">
+            {[
+              { icon: <FaHtml5 />, title: "HTML", color: "#ff7b00" },
+              { icon: <FaCss3 />, title: "CSS", color: "#0000ff" },
+              { icon: <FaJs />, title: "JAVASCRIPT", color: "#fff200" },
+              { icon: <FaReact />, title: "REACT", color: "#00d4ff" },
+              { icon: <FaNodeJs />, title: "NODE.JS", color: "#7CB701" },
+              { icon: <FaPhp />, title: "PHP", color: "#4D588E" },
+              { icon: <FaPython />, title: "PYTHON", color: "#356FA0" },
+              { icon: <FaBootstrap />, title: "BOOTSTRAP", color: "#7511F1" },
+              { icon: <FaJava />, title: "JAVA", color: "#ff001a" },
+            ].map((skill, index) => (
+              <div
+                key={index}
+                className="col-lg-3 col-md-4 col-sm-6 col-12 m-2" // Adjusted column sizes
+              >
+                <div
+                  className="dil card rounded-4"
+                  style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+                >
+                  <div className="card-body">
+                    <h3 className="card-title" style={{ color: skill.color }}>
+                      {skill.icon}
+                    </h3>
+                    <p className="card-text text-black fw-bold d-none d-lg-block">
+                      {skill.title}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="col-lg-3 m-1 col-sm-12 col-md-12  col-12  mx-5  mb-2  ">
-            <div
-              className="dil card  rounded-4 "
-              style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
-            >
-              <div className="card-body">
-                <h3 className="card-title" style={{ color: "#0000ff" }}>
-                  <FaCss3 />
-                </h3>
-                <p className="card-text text-black fw-bold d-none d-lg-block">
-                  CSS
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
-            <div
-              className="dil card  rounded-4"
-              style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
-            >
-              <div className="card-body">
-                <h3 className="card-title" style={{ color: "#fff200" }}>
-                  <FaJs />
-                </h3>
-                <p className="card-text text-black fw-bold d-none d-lg-block">
-                  JAVASCRIPT
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
-            <div
-              className="dil card  rounded-4"
-              style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
-            >
-              <div className="card-body">
-                <h3 className="card-title" style={{ color: "#00d4ff" }}>
-                  <FaReact />
-                </h3>
-                <p className="card-text text-black fw-bold d-none d-lg-block">
-                  REACT
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
-            <div
-              className="dil card  rounded-4"
-              style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
-            >
-              <div className="card-body">
-                <h3 className="card-title" style={{ color: "#7CB701" }}>
-                  <FaNodeJs />
-                </h3>
-                <p className="card-text text-black fw-bold d-none d-lg-block">
-                  NODE.JS
-                </p>
-              </div>
-            </div>
-          </div>{" "}
-          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
-            <div
-              className="dil card  rounded-4"
-              style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
-            >
-              <div className="card-body">
-                <h3 className="card-title" style={{ color: "#4D588E" }}>
-                  <FaPhp />
-                </h3>
-                <p className="card-text text-black fw-bold d-none d-lg-block">
-                  PHP
-                </p>
-              </div>
-            </div>
-          </div>{" "}
-          <div className="col-lg-3 m-1 col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
-            <div
-              className="dil card  rounded-4"
-              style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
-            >
-              <div className="card-body">
-                <h3 className="card-title" style={{ color: "#356FA0" }}>
-                  <FaPython />
-                </h3>
-                <p className="card-text text-black fw-bold d-none d-lg-block">
-                  PHYTON
-                </p>
-              </div>
-            </div>
-          </div>{" "}
-          <div className="col-lg-3 m-1  col-sm-12 col-md-12 col-12 mx-5  mb-2 ">
-            <div
-              className=" dil card  rounded-4"
-              style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
-            >
-              <div className="card-body">
-                <h3 className="card-title" style={{ color: "#7511F1" }}>
-                  <FaBootstrap />
-                </h3>
-                <p className="card-text  text-black fw-bold d-none d-lg-block">
-                  BOOTSTRAP
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 m-1  col-sm-12 col-md-12 col-12 mx-5  mb-2  ">
-            <div
-              className=" dil card  rounded-4"
-              style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
-            >
-              <div className="card-body">
-                <h3 className="card-title" style={{ color: "#ff001a" }}>
-                  <FaJava />
-                </h3>
-                <p className="card-text text-black fw-bold d-none d-lg-block">
-                  JAVA
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
+      </div>
+    </div>
 
         <div className="d-none d-lg-block">
           <div style={{ color: "#00ff00" }} className="snowflake">
