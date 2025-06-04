@@ -104,3 +104,9 @@ body,
   }
 }
 
+@media (max-width: 768px) {
+  .skills-wrapper {
+    padding-top: 20rem; /* veya 96px */
+  }
+}
+

@@ -1,4 +1,3 @@
-
 import {
   FaBootstrap,
   FaCss3,
@@ -16,62 +15,63 @@ import TypeWriter from "typewriter-effect";
 
 export default function Skills() {
   return (
-    <div className=" mt-5 mb-5"
-    style={{ marginTop: "20px" }}>
-      <div className="mt-5">
-         <div className="container  mt-5" style={{ marginTop: "20px" }}>
-      <div className="mt-5">
-        <div className="row container mt-5 text-center justify-content-center mx-auto">
-          {/* Typewriter effect for the title */}
-          <div
-            className="mb-5 mt-5"
-            style={{ fontFamily: "Daktilo", color: "#00ff00" }}
-          >
-            <TypeWriter
-              options={{
-                autoStart: true,
-                loop: true,
-                strings: ["My Skills"],
-              }}
-            />
-          </div>
-
-          {/* Skill Cards Section */}
-          <div className="row justify-content-center">
-            {[
-              { icon: <FaHtml5 />, title: "HTML", color: "#ff7b00" },
-              { icon: <FaCss3 />, title: "CSS", color: "#0000ff" },
-              { icon: <FaJs />, title: "JAVASCRIPT", color: "#fff200" },
-              { icon: <FaReact />, title: "REACT", color: "#00d4ff" },
-              { icon: <FaNodeJs />, title: "NODE.JS", color: "#7CB701" },
-              { icon: <FaPhp />, title: "PHP", color: "#4D588E" },
-              { icon: <FaPython />, title: "PYTHON", color: "#356FA0" },
-              { icon: <FaBootstrap />, title: "BOOTSTRAP", color: "#7511F1" },
-              { icon: <FaJava />, title: "JAVA", color: "#ff001a" },
-            ].map((skill, index) => (
+    <div>
+      <div>
+        <div className="container skills-wrapper">
+          <div className="mt-5">
+            <div className="row container  text-center justify-content-center mx-auto">
+              {/* Typewriter effect for the title */}
               <div
-                key={index}
-                className="col-lg-3 col-md-3 col-sm-12 col-12  m-2" // Adjusted column sizes
+                className="p-5"
+                style={{ fontFamily: "Daktilo", color: "#00ff00" }}
               >
+                <TypeWriter
+                  options={{
+                    autoStart: true,
+                    loop: true,
+                    strings: ["My Skills"],
+                  }}
+                />
+              </div>
+            </div>
+            {/* Skill Cards Section */}
+            <div
+              style={{ paddingBottom: "100px", paddingTop: "30px" }}
+              className="row justify-content-center "
+            >
+              {[
+                { icon: <FaHtml5 />, title: "HTML", color: "#ff7b00" },
+                { icon: <FaCss3 />, title: "CSS", color: "#0000ff" },
+                { icon: <FaJs />, title: "JAVASCRIPT", color: "#fff200" },
+                { icon: <FaReact />, title: "REACT", color: "#00d4ff" },
+                { icon: <FaNodeJs />, title: "NODE.JS", color: "#7CB701" },
+                { icon: <FaPhp />, title: "PHP", color: "#4D588E" },
+                { icon: <FaPython />, title: "PYTHON", color: "#356FA0" },
+                { icon: <FaBootstrap />, title: "BOOTSTRAP", color: "#7511F1" },
+                { icon: <FaJava />, title: "JAVA", color: "#ff001a" },
+              ].map((skill, index) => (
                 <div
-                  className="dil card rounded-4"
-                  style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+                  key={index}
+                  className="col-lg-3 col-md-3 col-sm-12 col-12  m-2" // Adjusted column sizes
                 >
-                  <div className="card-body">
-                    <h3 className="card-title" style={{ color: skill.color }}>
-                      {skill.icon}
-                    </h3>
-                    <p className="card-text text-black fw-bold d-none d-lg-block">
-                      {skill.title}
-                    </p>
+                  <div
+                    className="dil card rounded-4"
+                    style={{ backgroundColor: "rgba(255, 255, 255, 0.4)" }}
+                  >
+                    <div className="card-body">
+                      <h3 className="card-title" style={{ color: skill.color }}>
+                        {skill.icon}
+                      </h3>
+                      <p className="card-text text-black fw-bold d-none d-lg-block">
+                        {skill.title}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
         <div className="">
           <div style={{ color: "#00ff00" }} className="snowflake">

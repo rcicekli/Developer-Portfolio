@@ -13,9 +13,9 @@ import TypeWriter from "typewriter-effect";
 
 export default function Projects() {
   return (
-    <div className="container p-5 mt-5" style={{ marginTop: "10px" }}>
+    <div className="container p-5 " style={{ marginTop: "10px" }}>
       <div className="p-5 container ">
-        <div className=" row container mt-1 text-center  justify-content-center">
+        <div className="skills-wrapper row container mt-1 text-center  justify-content-center">
           <div
             className="mt-3 mb-5 "
             style={{ fontFamily: "Daktilo", color: "#00ff00" }}
