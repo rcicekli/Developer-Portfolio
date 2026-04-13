@@ -8,7 +8,7 @@ body,
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000; /* Scroll'ı tamamen kapatmak istiyorsan */
+  background-color: #000;
 }
 
 .App-logo {
@@ -47,20 +47,64 @@ body,
   }
 }
 
+/* --- GENEL KART METİN VE İKON AYARLARI (.dil class'ı için) --- */
 .dil {
   cursor: pointer;
+  
+  /* Siyah yerine KALICI Parlak Matrix Yeşili */
+  color: #00ff00 !important; 
+  
+  /* Hafif bir temel parlama (yazıların okunabilirliğini artırır) */
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.4);
+  
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 255, 0, 0.753) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Koyu zemin yeşili öne çıkarır */
 }
 
+/* Kartın içindeki metinlerin (fw-bold, card-text vb.) yeşil olmasını kesinleştirelim */
+.dil .card-text,
+.dil .card-title,
+.dil .text-black, /* Eskiden siyah olanlar artık yeşil */
+.dil .fw-bold {
+  color: #00ff00 !important; 
+}
+
+/* --- HOVER ANI: DAHA PARLAK NEON YEŞİL VE GLOW --- */
+.dil:hover {
+  /* Renk aynı kalır ama parlaklık artar (daha güçlü shadow ile) */
+  color: #00ff00 !important; 
+  
+  /* Çok daha parlak, neon bir yeşil parlama (Text ve Box Shadow) */
+  text-shadow: 
+    0 0 10px rgba(0, 255, 0, 1), /* Temel neon */
+    0 0 20px rgba(0, 255, 0, 0.8), /* Orta glow */
+    0 0 30px rgba(0, 255, 0, 0.6) !important; /* Dış glow */
+    
+  box-shadow: 
+    0 0 15px rgba(0, 255, 0, 0.7), 
+    0 0 30px rgba(0, 255, 0, 0.4), 
+    0 0 50px rgba(0, 255, 0, 0.2) !important;
+    
+  transform: translateY(-5px) scale(1.02); /* Hafif yukarı kalkma ve büyüme */
+  border-color: #00ff00 !important; /* Kenarlık tam parlar */
+}
+
+/* Eğer kartın içinde ikon varsa, o da parlasın */
+.dil:hover h3,
+.dil:hover h1,
+.dil:hover svg {
+  color: #00ff00 !important;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 0, 1));
+}
+
+/* Gerekirse ::before efektini de güncelleyelim (Kullanmıyorsan silebilirsin) */
 .dil:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 20px #00ff00;
+  box-shadow: 0 0 30px #00ff00 !important;
+  border: 1px solid #00ff00;
 }
 
-.dil:hover {
-  color: #10ffeb;
-  box-shadow: 0 0 30px #00ff00;
-  text-shadow: 0 0 30px #fff;
-}
 
 @font-face {
   font-family: "Daktilo";
@@ -109,4 +153,133 @@ body,
     padding-top: 20rem; /* veya 96px */
   }
 }
+/* TELEFON (Küçük Ekranlar) */
+          @media (max-width: 767px) {
+            .projects-wrapper {
+              margin-top: 600px !important; /* Telefonlarda üst boşluk */
+              padding-top: 20px;
+            }
+            .header-box { min-height: 60px; }
+            .cards{margin-bottom:100px;}
+          }
 
+          /* TABLET (768px - 991px) */
+          @media (min-width: 768px) and (max-width: 991px) {
+            .projects-wrapper {
+              margin-top: 10px !important; 
+              padding-top: 10px !important;
+            }
+          }
+
+          /* TELEFON (Küçük Ekranlar) */
+          @media (max-width: 767px) {
+            .skills-wrapper {
+              margin-top: 400px !important; /* Telefonlarda üst boşluk */
+              padding-top: 20px;
+             
+            }
+            
+          }
+
+          /* TABLET (768px - 991px) */
+          @media (min-width: 768px) and (max-width: 991px) {
+            .skills-wrapper {
+              margin-top: 10px !important; 
+              padding-top: 10px !important;
+            }
+          }
+          
+          /* GENEL STİLLER */
+          .header-box {
+            min-height: 80px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+          }
+
+          /* Kartların normal hali */
+.project-card {
+  /* Beyaz (255,255,255) yerine Siyah (0,0,0) kullanıyoruz */
+  background-color: rgba(0, 0, 0, 0.6) !important; 
+  backdrop-filter: blur(10px);
+  border: 4px solid rgba(2, 255, 2, 0.344) !important;
+  color: #fff;
+}
+
+/* Hover efekti: Parlak Yeşil Shadow */
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02); /* Kart hafif yukarı kalkar ve büyür */
+  
+  /* Çok katmanlı shadow ile neon parlama efekti */
+  box-shadow: 
+    0 0 10px rgba(0, 255, 0, 0.6), 
+    0 0 20px rgba(0, 255, 0, 0.4), 
+    0 0 30px rgba(0, 255, 0, 0.2); 
+    
+  border: 1px solid #00ff00; /* Kenarlık tam yeşile döner */
+  background-color: rgba(0, 255, 0, 0.05) !important; /* Arka plan hafif yeşillenir */
+}
+
+/* Kartın içindeki ikon ve yazıların hover anında parlaması */
+.project-card:hover .card-title,
+.project-card:hover .text-dark {
+  color: #00ff00 !important;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+.btn {
+  /* Normal Hali: Gri Arka Plan */
+  background-color: #000000 !important; /* Koyu gri */
+  color: #918c8c !important;           /* Yazı her zaman siyah */
+  border: 1px solid #02ff0ae3 !important;
+  font-weight: bold;
+  padding: 8px 20px;
+  transition: all 0.3s ease-in-out;    /* Geçiş efekti */
+  cursor: pointer;
+  border-radius: 8px;                  /* İsteğe göre köşeleri yuvarlar */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover Hali: Parlak Yeşil ve Glow Efekti */
+.btn:hover {
+  background-color: #00ff00 !important; /* Parlak yeşil */
+  color: #000000 !important;           /* Yazı siyah kalmaya devam eder */
+  border-color: #00ff00 !important;
+  
+  /* Yeşil parlama efekti */
+  box-shadow: 
+    0 0 10px rgba(0, 255, 0, 0.8), 
+    0 0 20px rgba(0, 255, 0, 0.4);
+    
+  transform: scale(1.05);              /* Üzerine gelince çok hafif büyür */
+}
+
+
+.matrix-icon-link {
+  color: #00ff00; /* Temel Matrix yeşili */
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.matrix-icon-link:hover {
+  color: #00ff00;
+  /* Neon parlama efekti */
+  filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.8));
+  transform: scale(1.2); /* Üzerine gelince hafif büyüme */
+}
+
+/* Mobilde yazıların sıkışmaması için ayar */
+@media (max-width: 768px) {
+  .matrix-text {
+    font-size: 0.75rem !important; /* Mobilde yazıları küçültüyoruz */
+  }
+  .matrix-icon-link {
+    font-size: 1.2rem;
+  }
+}

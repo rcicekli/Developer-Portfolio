@@ -20,7 +20,7 @@ export default function AboutMe() {
               }}
               onInit={(TypeWriter) => {
                 TypeWriter.typeString(
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                  "Merhaba! Ben Ramazan, bir Bilgisayar Mühendisi ve tam yığın (Full-stack) geliştiriciyim. Android Studio'nun derinliklerinden React'in dinamik dünyasına uzanan bir çizgide; modern web teknolojileri ve mobil platformlar için yenilikçi çözümler üretiyorum."
                 ).start();
               }}
             />
@@ -40,19 +40,19 @@ export default function AboutMe() {
               }}
               onInit={(TypeWriter) => {
                 TypeWriter.pauseFor(3000)
-                  .typeString("Hello")
+                  .typeString("Merhaba")
                   .pauseFor(1000)
                   .deleteAll()
-                  .typeString("I'm Computer Engineer")
+                  .typeString("Ben Ramazan")
                   .pauseFor(1000)
                   .deleteAll()
-                  .typeString("and Frondasd")
+                  .typeString("ve Bilgisayar Mühendisiyim")
                   .pauseFor(1000)
-                  .deleteChars(8)
-                  .typeString("Front-End Developer")
+                   .deleteAll()
+                  .typeString("Sayfama Hoşgsdfsfsdf")
                   .pauseFor(1000)
-                  .deleteAll()
-                  .typeString("These Are the Things About Me")
+                  .deleteChars(13)            
+                  .typeString(" Hoşgeldiniz")
 
                   .start();
               }}

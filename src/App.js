@@ -9,7 +9,7 @@ import "./styles.css"
 function App() {
   const [navHeight, setNavHeight] = useState(0);
    useEffect(() => {
-    document.title = "Developer Portfolio";
+    document.title = "Matrix_Portfolio";
   }, []); 
 
 

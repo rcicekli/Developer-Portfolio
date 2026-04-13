@@ -17,8 +17,8 @@ export default function Skills() {
   return (
     <div>
       <div>
-        <div className="container skills-wrapper">
-          <div className="mt-5">
+        <div className="container">
+          <div className="skills-wrapper">
             <div className="row container  text-center justify-content-center mx-auto">
               {/* Typewriter effect for the title */}
               <div
@@ -36,7 +36,7 @@ export default function Skills() {
             </div>
             {/* Skill Cards Section */}
             <div
-              style={{ paddingBottom: "100px", paddingTop: "30px" }}
+              style={{ paddingBottom: "100px", paddingTop: "10px"}}
               className="row justify-content-center "
             >
               {[
