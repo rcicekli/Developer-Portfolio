@@ -1,71 +1,86 @@
-# Getting Started with Create React App
+## 🟢 MATRIX-THEMED DEVELOPER PORTFOLIO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 🚀 Modern React tabanlı, Matrix filminden ilham alan interaktif geliştirici portfolyo projesi
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 PROJE LİNKİ
 
-### `npm start`
+🔗 Live Demo: https://developer-portfolio-mu-five.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 PROJE HAKKINDA
 
-### `npm test`
+Bu proje, Matrix filmi estetiğinden ilham alınarak geliştirilmiş modern bir developer portfolio web uygulamasıdır.  
+Amaç; projeleri, yetenekleri ve kişisel bilgileri **interaktif ve görsel olarak etkileyici bir şekilde sunmaktır.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📸 SCREENSHOTS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Matrix 1 | Matrix 2 |
+|----------|----------|
+| ![Matrix 1](src/assets/matrix_ss1.png) | ![Matrix 2](src/assets/matrix_ss2.png) |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Matrix 3 | Matrix 4 |
+|----------|----------|
+| ![Matrix 3](src/assets/matrix_ss3.png) | ![Matrix 4](src/assets/matrix_ss4.png) |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✨ ÖZELLİKLER
 
-### `npm run eject`
+- 🟢 Matrix temalı cyberpunk UI tasarımı
+- ⌨️ Typewriter efekti ile dinamik yazı animasyonu
+- 🎞️ React Awesome Slider ile animasyonlu sayfa geçişleri
+- 💻 Interaktif proje kartları (GitHub yönlendirmeli)
+- 🌨️ Teknoloji ikonlarıyla “matrix rain” benzeri efekt
+- 📱 Tam responsive tasarım
+- 🧭 Sticky ve dinamik navbar
+- 🎨 Custom CSS ile tamamen özel tasarım sistemi
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ KULLANILAN TEKNOLOJİLER
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- ⚛️ React
+- 🎞️ react-awesome-slider
+- ⌨️ typewriter-effect
+- 🎨 React Bootstrap / Reactstrap
+- 📦 Font Awesome Icons
+- 💡 JavaScript (ES6+)
+- 🌐 Custom CSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🧠 PROJE YAPISI
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+src/
+├── components/
+│   ├── MyNav.jsx
+│   ├── AboutMe.jsx
+│   ├── Projects.jsx
+│   ├── Skills.jsx
+│   ├── Slider.jsx
+│   └── Contact.jsx
+├── App.js
+├── index.js
+└── styles.css
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##📱 RESPONSIVE YAPI
 
-### Code Splitting
+✔ Desktop uyumlu
+✔ Tablet uyumlu
+✔ Mobil uyumlu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+##👨‍💻 GELİŞTİRİCİ
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ramazan Çiçekli
 
-### Making a Progressive Web App
+GitHub: https://github.com/rcicekli
+LinkedIn: https://www.linkedin.com/in/rcicekli/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+##⭐ DESTEK
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# Developer-Portfolio" 
+Projeyi beğendiysen ⭐ vermeyi unutma!
