@@ -20,7 +20,7 @@ export default function AboutMe() {
               }}
               onInit={(TypeWriter) => {
                 TypeWriter.typeString(
-                  "Merhaba! Ben Ramazan, bir Bilgisayar Mühendisi ve tam yığın (Full-stack) geliştiriciyim. Android Studio'nun derinliklerinden React'in dinamik dünyasına uzanan bir çizgide; modern web teknolojileri ve mobil platformlar için yenilikçi çözümler üretiyorum."
+                   "Merhaba!<br/>  Ben Ramazan, bir Bilgisayar Mühendisi ve tam yığın (Full-stack) geliştiriciyim. <br/>  Android Studio'nun derinliklerinden React'in dinamik dünyasına uzanan bir çizgide; <br/>  modern web teknolojileri ve mobil platformlar için yenilikçi çözümler üretiyorum."
                 ).start();
               }}
             />
