@@ -66,21 +66,27 @@ src/
 ├── App.js
 ├── index.js
 └── styles.css
+```
+---
 
-##📱 RESPONSIVE YAPI
+## 📱 RESPONSIVE YAPI
 
 ✔ Desktop uyumlu
+
 ✔ Tablet uyumlu
+
 ✔ Mobil uyumlu
 
-
-##👨‍💻 GELİŞTİRİCİ
+---
+## 👨‍💻 GELİŞTİRİCİ
 
 Ramazan Çiçekli
 
 GitHub: https://github.com/rcicekli
+
 LinkedIn: https://www.linkedin.com/in/rcicekli/
 
-##⭐ DESTEK
+---
+## ⭐ DESTEK
 
 Projeyi beğendiysen ⭐ vermeyi unutma!
